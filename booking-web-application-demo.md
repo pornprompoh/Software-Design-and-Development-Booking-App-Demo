@@ -530,7 +530,8 @@ app.listen(port, () => {
 
 ### บันทึกผลลัพธ์การ Get ข้อมูล
 
-![รูปผลลัพธ์การ Get ข้อมูล](images path/image.png)
+![image](https://github.com/user-attachments/assets/b145f7c6-8e9b-4dd7-a32d-2f68c2c2e313)
+
 
 ### กรณีผลลัพธ์แจ้ง "error":"Token ไม่ถูกต้องหรือหมดอายุ" ให้ทำการ Login ใหม่ แล้วคัดลอก Token ที่ได้เพื่อเปลี่ยนค่าใน variable token
 
@@ -541,7 +542,8 @@ app.listen(port, () => {
 
 ### บันทึกผลลัพธ์การ Get ข้อมูลโดยระบุ ID
 
-![รูปผลลัพธ์การ Get ข้อมูลโดยระบุ ID](images path/image.png)
+![image](https://github.com/user-attachments/assets/6f05a7c0-fcfd-453a-92fb-e5d050c5dce2)
+
 
 8. สร้าง request เพื่อ Update Booking ระบุ Url คือ PUT: {{baseUrl}}/api/bookings/1
    - Headers: Authorization: Bearer {{token}}
@@ -553,14 +555,16 @@ app.listen(port, () => {
 
 ### บันทึกผลลัพธ์การ PUT เพื่อแก้ไขข้อมูล (ข้อมูล comment จะต้องไม่เป็นค่า null)
 
-![รูปผลลัพธ์การ PUT ข้อมูล](images path/image.png)
+![image](https://github.com/user-attachments/assets/313abb15-0b4e-45a6-ae32-a587ae02026f)
+
 
 9. สร้าง request เพื่อ Delete Booking ระบุ Url คือ DELETE: {{baseUrl}}/api/bookings/1
    - Headers: Authorization: Bearer {{token}}
 
 ### บันทึกผลลัพธ์การ DELETE
 
-![รูปผลลัพธ์การ delete ข้อมูล](images path/image.png)
+![image](https://github.com/user-attachments/assets/1ceaab7c-409d-429b-97ad-ba04c48c5d7d)
+
 
 9.1 ปรับปรุงแก้ไขโค้ดเพื่อให้แสดงผลการลบเป็น status : "ลบข้อมูลสำเร็จโดย [ชื่อนักศึกษา]"
 ดังรูป
@@ -568,9 +572,7 @@ app.listen(port, () => {
 
 ### บันทึกผลลัพธ์การ DELETE with status
 
-![รูปผลลัพธ์การ Delete ข้อมูล](images path/image.png)
-
-
+![image](https://github.com/user-attachments/assets/c9b026ea-ed36-46c8-8951-fb31a4c31dc0)
 
 ## ทฤษฎีที่เกี่ยวข้องกับการพัฒนาส่วน Front-end ด้วย React
 ### 1. React
@@ -1040,7 +1042,8 @@ npm run dev
 ```
 1.1 กดปุ่ม Ctrl ค้างไว้ แล้วคลิกลิ้ง ที่ http://localhost:เลข Port ที่รัน เพื่อเปิดหน้าเว็บการทำงาน 
 #### บันทึกผลการรัน
-![รูปผลการรันหน้า front-end](./image-path/image.png)
+![image](https://github.com/user-attachments/assets/5c9ea687-f1f2-4873-b94f-f7a8410b156a)
+
 1.2 กด Ctrl + c เพื่อยกเลิกการทำงาน
 
 2. ติดตั้ง dependencies ที่จำเป็น:
@@ -1051,7 +1054,7 @@ npm install -D tailwindcss@3 postcss autoprefixer
 ```
 #### axios คืออะไร ?
 ```html
-  axios คืออะไร เขียนคำตอบที่นี่
+  axios คืออะไร Axios เป็นไลบรารีของ JavaScript ที่ใช้ในการส่งคำขอ HTTP (HTTP requests) ไปยังเซิร์ฟเวอร์
 ```
 3. ตั้งค่า Tailwind CSS:
 
@@ -1153,12 +1156,89 @@ export default App;
 ```
 2) ทดสอบรัน โดยพิมพ์คำสั่ง npm run dev แล้วบันทึกหน้าผลการรัน
 #### บันทึกรูปผลการรัน
-![ผลการรัน](./image path/image.png)
+![image](https://github.com/user-attachments/assets/c97575aa-6574-4a60-b3f1-88da68612c6c)
 
 3) กดปุ่ม Ctrl ค้างไว้ แล้วคลิกลิ้ง ที่ http://localhost:เลข Port ที่รัน เพื่อเปิดหน้าเว็บการทำงาน แล้วตรวจสอบ error โดยไม่ต้องหยุดการทำงานของ Application
 #### บันทึกผลการรัน
 ```html
 บันทึกสาเหตุที่ทำให้เกิด error ที่นี่
+2:39:15 PM [vite] Internal server error: Failed to resolve import "./components/BookingForm" from "src/App.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/HP/Desktop/hotel-booking-system/frontend/src/App.jsx:3:24
+  17 |  import React from "react";
+  18 |  import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+  19 |  import BookingForm from "./components/BookingForm";
+     |                           ^
+  20 |  function App() {
+  21 |    return /* @__PURE__ */ jsxDEV(Router, { children: /* @__PURE__ */ jsxDEV("div", { className: "min-h-screen bg-gray-100", children: [
+      at TransformPluginContext._formatLog (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47835:41)
+      at TransformPluginContext.error (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47832:16)
+      at normalizeUrl (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:45968:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:46087:37
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:46014:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47630:18)
+      at async loadAndTransform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:41318:27)
+2:39:15 PM [vite] (client) Pre-transform error: Failed to resolve import "./components/BookingForm" from "src/App.jsx". Does the 
+file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/HP/Desktop/hotel-booking-system/frontend/src/App.jsx:3:24
+  17 |  import React from "react";
+  18 |  import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+  19 |  import BookingForm from "./components/BookingForm";
+     |                           ^
+  20 |  function App() {
+  21 |    return /* @__PURE__ */ jsxDEV(Router, { children: /* @__PURE__ */ jsxDEV("div", { className: "min-h-screen bg-gray-100", children: [
+2:42:22 PM [vite] (client) hmr update /src/index.css
+2:42:22 PM [vite] (client) Pre-transform error: Failed to resolve import "./components/BookingForm" from "src/App.jsx". Does the 
+file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/HP/Desktop/hotel-booking-system/frontend/src/App.jsx:3:24
+  17 |  import React from "react";
+  18 |  import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+  19 |  import BookingForm from "./components/BookingForm";
+     |                           ^
+  20 |  function App() {
+  21 |    return /* @__PURE__ */ jsxDEV(Router, { children: /* @__PURE__ */ jsxDEV("div", { className: "min-h-screen bg-gray-100", children: [
+2:42:23 PM [vite] Internal server error: Failed to resolve import "./components/BookingForm" from "src/App.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/HP/Desktop/hotel-booking-system/frontend/src/App.jsx:3:24
+  17 |  import React from "react";
+  18 |  import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+  19 |  import BookingForm from "./components/BookingForm";
+     |                           ^
+  20 |  function App() {
+  21 |    return /* @__PURE__ */ jsxDEV(Router, { children: /* @__PURE__ */ jsxDEV("div", { className: "min-h-screen bg-gray-100", children: [
+      at TransformPluginContext._formatLog (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47835:41)
+      at TransformPluginContext.error (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47832:16)
+      at normalizeUrl (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:45968:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:46087:37
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:46014:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47630:18)
+      at async loadAndTransform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:41318:27)
+      at async viteTransformMiddleware (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:42781:24)
+2:42:26 PM [vite] Internal server error: Failed to resolve import "./components/BookingForm" from "src/App.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/HP/Desktop/hotel-booking-system/frontend/src/App.jsx:3:24
+  17 |  import React from "react";
+  18 |  import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+  19 |  import BookingForm from "./components/BookingForm";
+     |                           ^
+  20 |  function App() {
+  21 |    return /* @__PURE__ */ jsxDEV(Router, { children: /* @__PURE__ */ jsxDEV("div", { className: "min-h-screen bg-gray-100", children: [
+      at TransformPluginContext._formatLog (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47835:41)
+      at TransformPluginContext.error (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47832:16)
+      at normalizeUrl (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:45968:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:46087:37
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:46014:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:47630:18)
+      at async loadAndTransform (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:41318:27)
+      at async viteTransformMiddleware (file:///C:/Users/HP/Desktop/hotel-booking-system/frontend/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:42781:24) (x2)
 ```
 ### 3.2.2 BookingForm Component
 1) สร้างไฟล์ `src/components/BookingForm.jsx`:
@@ -1442,7 +1522,8 @@ export default BookingForm;
 ![หน้าจองห้องพัก](images/front-booking.png)
 3) ทดสอบป้อนข้อมูลการจอง โดยระบุชื่อผู้จองเป็นชื่อนักศึกษา และบันทึกผลการทดลองที่มีหน้าสรุปการจอง
 #### บันทึกผลการทดลอง
-![รูปหน้าจองห้องพัก ที่แสดงข้อมูลสรุปการจอง](images-path/image.png)
+![image](https://github.com/user-attachments/assets/774afc19-5315-4576-9383-e86ef5bf3d2b)
+![image](https://github.com/user-attachments/assets/cdb365f8-b1d3-4919-b63d-37d4cc21eee7)
 
 4) ใช้ Postman  ตรวจสอบว่ามีข้อมูลการจองเพิ่มไปหรือไม่ (หาก token หมดอายุ ต้องทำการ Login แล้วเปลี่ยนค่า token ใหม่)
 
@@ -1821,9 +1902,7 @@ export default App;
 4) ทำการ Login ด้วย user: admin  password: admin123  หากระบบทำงานถูกต้อง จะแสดงรายการจองห้องพัก
 
 ### บันทึกผลการทดลอง 
-![รูปรายการจองห้องพัก](images-path/image.png)
-   
-   
+![image](https://github.com/user-attachments/assets/d3f5fdb1-1ca6-48c1-81db-a2e48ea91518)
 
 ### 3.2.7 BookingEdit Component
 
@@ -2012,6 +2091,7 @@ export default AdminDashboard;
 
 3) บันทึกผลการทดลอง เมื่อกดปุ่ม "สำหรับผู้ดูแลระบบ"
    ### บันทึกผลการทดลอง
-![ผลการแก้ไขข้อมูลการจอง](image-path/image.png)
+![image](https://github.com/user-attachments/assets/d4b8c6b6-b8be-4457-829c-4d10f8fd3f26)
+
 
 
